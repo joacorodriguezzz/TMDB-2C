@@ -6,7 +6,7 @@ function RegisterPage() {
   const [password, setPassword] = useState("");
 
   return (
-    <div>
+    <div id="main-div">
       <h1 id="title">Registro</h1>
       <form>
         <div>
