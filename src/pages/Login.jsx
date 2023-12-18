@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -5,6 +6,17 @@ function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const handleSubmit = (e) => {
+e.preventDefault
+  
+if(email,password){
+  axios.post ('http://localhost:5000/api/user/login', {
+  "email": email,
+  "password": password
+  })
+}
+
+  
   return (
     <div>
       <h1 id="title">Iniciar Sesión</h1>
@@ -32,6 +44,6 @@ function LoginPage() {
       </form>
     </div>
   );
-}
+}}
 
 export default LoginPage;

@@ -7,10 +7,13 @@ import Home from "./pages/Home";
 import Search from "./pages/Search";
 import OnMovie from "./pages/OnMovie";
 import RegisterPage from "./pages/Registro";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div>
+ 
+      
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,6 +25,7 @@ function App() {
         <Route path="/on-movie/:id" element={<OnMovie />} />
         <Route path="/registro" element={<RegisterPage />} />
       </Routes>
+     
     </div>
   );
 }
